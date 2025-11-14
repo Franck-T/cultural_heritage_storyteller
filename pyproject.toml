@@ -1,0 +1,20 @@
+[project]
+name = "cultural_heritage"
+version = "0.1.0"
+description = "cultural_heritage using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.80.0,<1.0.0"
+]
+
+[project.scripts]
+cultural_heritage = "cultural_heritage.main:run"
+run_crew = "cultural_heritage.main:run"
+train = "cultural_heritage.main:train"
+replay = "cultural_heritage.main:replay"
+test = "cultural_heritage.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

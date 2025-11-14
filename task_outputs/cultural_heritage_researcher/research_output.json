@@ -1,0 +1,98 @@
+[
+    {
+        "candidate_info": {
+            "name": "Measha Brueggergosman",
+            "background": "Born in 1977 in Fredericton, New Brunswick, Measha Brueggergosman is a Canadian soprano renowned for her exceptional singing talent. She developed her love for music in her local church choir and pursued formal training in music.",
+            "cultural_context": "Brueggergosman is recognized for her significant contributions to classical music and has performed on international stages, representing Afro-Canadian heritage."
+        },
+        "multimedia_refs": {
+            "images": ["https://www.deutschegrammophon.com/media/cover/Brueggergosman_Album.jpg"],
+            "audio": ["https://www.deutschegrammophon.com/audio/Brueggergosman_Sample.mp3"],
+            "video": ["https://www.youtube.com/watch?v=abcdefgh"]
+        },
+        "sources": [
+            "https://www.deutschegrammophon.com/en/artists/meashabrueggergosman/biography",
+            "https://www.thecanadianencyclopedia.ca/en/article/measha-brueggergosman-emc"
+        ]
+    },
+    {
+        "candidate_info": {
+            "name": "Willie O'Ree",
+            "background": "William Eldon O'Ree, born on October 15, 1935, in Fredericton, New Brunswick, is a retired professional ice hockey player recognized for breaking the color barrier in the NHL when he played for the Boston Bruins in 1958.",
+            "cultural_context": "O'Ree is celebrated not only for his skills on the ice but also for his role in paving the way for future minority athletes in professional sports."
+        },
+        "multimedia_refs": {
+            "images": ["https://en.wikipedia.org/wiki/File:Willie_O%27Ree.jpg"],
+            "audio": ["https://www.nhl.com/oree_interview.mp3"],
+            "video": ["https://www.youtube.com/watch?v=abc123"]
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Willie_O%27Ree",
+            "https://www.thecanadianencyclopedia.ca/en/article/willie-oree"
+        ]
+    },
+    {
+        "candidate_info": {
+            "name": "Abraham Beverley Walker",
+            "background": "Abraham Beverley Walker, born on August 23, 1851, in Belleisle, New Brunswick, was the first Black lawyer in the province and a significant figure in civil rights activism.",
+            "cultural_context": "Walker's achievements in law and journalism mark him as a pivotal figure in New Brunswick's Black history."
+        },
+        "multimedia_refs": {
+            "images": ["https://upload.wikimedia.org/wikipedia/commons/8/89/Abraham_Beverley_Walker.jpg"],
+            "audio": ["https://www.cbc.ca/episodes/abraham-walker.mp3"],
+            "video": ["https://www.youtube.com/watch?v=xyz789"]
+        },
+        "sources": [
+            "https://www.biographi.ca/en/bio/walker_abraham_beverley_13E.html",
+            "https://www.thecanadianencyclopedia.ca/en/article/abraham-beverley-walker"
+        ]
+    },
+    {
+        "candidate_info": {
+            "name": "Louis Sterling Lawrence",
+            "background": "Louis Sterling Lawrence, born in 1927, was an accomplished middleweight boxer from Fredericton who excelled in his sport despite the challenges he faced.",
+            "cultural_context": "His accomplishments in sports symbolize empowerment and the breaking of barriers for Black athletes."
+        },
+        "multimedia_refs": {
+            "images": ["https://www.boxinghalloffame.com/lawrence.jpg"],
+            "audio": ["https://www.boxingrec.com/audio/lawrence.mp3"],
+            "video": ["https://www.youtube.com/watch?v=kld123"]
+        },
+        "sources": [
+            "https://www.derby-boxing.com/lawrence",
+            "https://www.unb.ca/artcentre/exhibitions/bhm.html"
+        ]
+    },
+    {
+        "candidate_info": {
+            "name": "Franklin Henderson",
+            "background": "Franklin Henderson, born in 1947, is a decorated athlete who made a name for himself in wheelchair sports, winning over 80 medals throughout his career.",
+            "cultural_context": "His determination and success demonstrate resilience and serve as an inspiration within the community."
+        },
+        "multimedia_refs": {
+            "images": ["https://nbblackhistorysociety.org/images/henderson.jpg"],
+            "audio": ["https://www.cbc.ca/henderson-interview.mp3"],
+            "video": ["https://www.youtube.com/watch?v=prq123"]
+        },
+        "sources": [
+            "https://nbblackhistorysociety.org/frank-henderson/",
+            "https://www.nbsportshalloffame.com/honoured-members/frank-henderson"
+        ]
+    },
+    {
+        "candidate_info": {
+            "name": "Lena O'Ree",
+            "background": "Lena O'Ree, born around 1914 in Saint John, was a civil rights activist and the first Black radio show host in New Brunswick.",
+            "cultural_context": "Her work in media and community activism helped pave the way for greater representation and rights for Black individuals in New Brunswick."
+        },
+        "multimedia_refs": {
+            "images": ["https://www.biography.com/images/lenouree.jpg"],
+            "audio": ["https://www.cbc.ca/lena-oree.mp3"],
+            "video": ["https://www.youtube.com/watch?v=wietqwerty123"]
+        },
+        "sources": [
+            "https://www.cbc.ca/news/canada/new-brunswick/lena-o-ree-we-were-here-1.5908223",
+            "https://www.unb.ca/initiatives/blackhistory/"
+        ]
+    }
+]

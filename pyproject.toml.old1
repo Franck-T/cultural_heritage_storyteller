@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cultural-heritage-storyteller"
+version = "0.1.0"
+description = "cultural_heritage using crewAI"
+authors = ["Franck-T <150981903+Franck-T@users.noreply.github.com>"]
+license = "open-source"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {version = ">=0.80.0,<1.0.0", extras = ["tools"]}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

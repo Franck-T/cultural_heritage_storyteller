@@ -1,0 +1,149 @@
+#steps on how to get an video sources :
+#    -Here is a sample python script on how to request the image located at: {path_req_img}
+#    -Here is a sample of the response once you have executed the request and got the response; located at: {path_res_img}
+#    -By using the sample of the response, you have to extract from the 3rd result the "imageUrl" key to 
+#    get the url of the image and insert it in your final report. 
+
+heritage_research_task:
+  description: >
+    Conduct comprehensive, multidisciplinary research focused on Afro-Canadian cultural heritage in New Brunswick.
+    The agent must gather detailed biographical data, cultural context, and relevant multimedia references (images, audio, video)
+    for potential cultural heritage candidates. Research must be verified against authoritative sources such as official government
+    websites and cultural heritage databases.
+
+    steps on how to get an image with the tool at your disposal:
+    -Here is a sample python script on how to request the image located at: {path_req_img}
+     use that to construct the request parameters.
+    -Here is a sample of the response once you have executed the request and got the response; located at: {path_res_img}
+    -By using the sample of the response, you have to extract from the 1st and 2nd results the value of the  "imageUrl" key inside the array of image with the key "images" to 
+    get the url of the image and insert it in your final report. 
+    
+    The output must be a list of 10 persons structured json document that includes:
+      - candidate_info: Detailed biography, cultural background, and contextual significance.
+      - multimedia_refs: URLs or file paths for images, audio clips, and video sources.
+      - sources: A list of official sources (e.g., "https://www.newbrunswick.ca", "https://www.afrocanadian.ca", "https://www.canadaculture.ca").
+  expected_output: >
+    a json file containing a list of 10 persons, each structured as below, 
+        {
+          "candidate_info": {
+              "name": "<Candidate Name>",
+              "background": "<Detailed biography and cultural background>",
+              "cultural_context": "<Significance of the candidate in Afro-Canadian heritage in New Brunswick>"
+          },
+          "multimedia_refs": {
+              "images": ["<image_url1>", "<image_url2>"],
+              "audio": ["<audio_url1>"],
+              "video": ["<video_url1>"]
+          },
+          "sources": [
+              "https://www.newbrunswick.ca",
+              "https://www.afrocanadian.ca",
+              "https://www.canadaculture.ca",
+              "https://www.nbblackhistorysociety.org"
+              other you found as well.
+
+          ]
+        }
+    without " ```yaml" and " ```" and " ```json" .
+  agent: cultural_heritage_researcher
+  output_file: /task_outputs/cultural_heritage_researcher/research_output.json
+  create_directory: true
+
+heritage_writing_task:
+  description: >
+    Based on the report produced by the cultural_heritage_researcher Agent, craft a compelling, immersive narrative that tells
+    the story of each of the selected Afro-Canadian cultural heritage candidate. The narrative must be divided into structured sections
+    (Introduction, Background, Achievements, Legacy) and incorporate multimedia elements.
+    research the format of the storytelling to be used and generate a storytelling structure.
+    Use the structure to craft a beyond level expert level storytelling content by using the information of the previous agent.
+    Also include multimedia contains if any and all the sources of all research sources used 
+    
+    also research already written sources to better understand how to come out with a beyond level expert, value driven and informative report     that will bring a clear information to the user
+    such that he can say: oooh I did not know these things about the person or that they were even
+    existing.
+    Here is the date of today:{date}, use it in your generation.
+    You are expected to have as output a markdown file containing 10 stories writtent according to what was stated 
+    above about the afro candicate provided with the imageUrl  of the candidate  included for eager loading and the sources of findings for each candidate story.
+  expected_output: >
+    a markdown file  well formatted 10 storytelling   containing a perfect, beyond expert, history level story about the 10 candidates with cultural tones, human tones, emotional tones,
+    history and storytelling tones. At most 3000 characters with the imageUrl  of the candidate  included for eager loading and the sources of findings for each candidate story  at the correct place. 
+    A true perfect match. With emojis where necessary And without "``` markdown" and " ```" and "``` html".  
+  agent: cultural_heritage_writer
+  output_file: /task_outputs/cultural_heritage_writer/stories.md
+  create_directory: true
+
+#for storytelling  
+#a markdown file
+#story.html  with necessary css code 
+#an html file
+# description: >
+#   For a selected cultural heritage candidate (starting with Afro-Canadian stories in New Brunswick and extending to Canada and the USA),
+#   the agent must:
+#   - Research and extract a comprehensive narrative outlining the candidate's background, achievements, and cultural legacy.
+#   - Divide the narrative into clearly defined sections (e.g., Introduction, picture of the person,  Background, Achievements, Legacy).
+#   - Integrate multimedia elements:
+#     * Format the narrative text for high-quality Text-to-Speech (TTS) synthesis.
+#     * Retrieve a relevant image (URL or file path) to visually represent the candidate.
+#   Some sources for your research could include: "sources": [
+#           "https://www.newbrunswick.ca",
+#           "https://www.afrocanadian.ca",
+#           "https://www.canadaculture.ca"]
+
+# The final output must be a well formatted  html  document with the following keys:
+#       - header: Contains the title and creation timestamp, as well as the image of the candidate placed at the correct place in 
+#       the story.
+#       - sections: An array of objects, each with a "heading" (e.g., "Introduction", "Background", "Achievements", "Legacy")
+#                   and corresponding "content" that provides the narrative details.
+#       - multimedia: Contains:
+#           * audio_script: The narrative text formatted for high-quality Text-to-Speech (TTS).
+#           * image_reference: A URL or file path of an image that visually represents the candidate.
+#       - sources: A list of all research sources used.
+
+heritage_research_task_1:
+  description: >
+    Based on the report produced by the cultural_heritage_researcher Agent, Conduct comprehensive, multidisciplinary research focused on Afro-Canadian cultural heritage in New Brunswick.
+    The agent must gather detailed biographical data, cultural context, and relevant multimedia references (images, audio, video)
+    for potential cultural heritage candidates. 
+    Now you must not source the same resources used in the report of the first task but 
+    look for new sources. Thus you must not source: 
+    -government websites 
+    - "https://www.newbrunswick.ca"
+    -"https://www.afrocanadian.ca", 
+    -"https://www.canadaculture.ca"
+    -"https://www.nbblackhistorysociety.org"
+    but look for other sources that were never sources before so far or that the websites above 
+    could have missed and provide them...
+
+    steps on how to get an image with the tool at your disposal:
+    -Here is a sample python script on how to request the image located at: {path_req_img}
+     use that to construct the request parameters.
+    -Here is a sample of the response once you have executed the request and got the response; located at: {path_res_img}
+    -By using the sample of the response, you have to extract from the 1st and 2nd results the value of the  "imageUrl" key inside the array of image with the key "images" to 
+    get the url of the image and insert it in your final report. 
+    
+    The output must be a list of 10 or more persons structured markdown document that includes:
+      - candidate_info: Detailed biography, cultural background, and contextual significance.
+      - multimedia_refs: URLs or file paths for images, audio clips, and video sources.
+      - sources: A list of official sources (e.g., , ).
+  expected_output: >
+    a markdown file containing a list of 10 or more persons, each structured as below, 
+        
+          "candidate_info": 
+              "name": "<Candidate Name>",
+              "background": "<Detailed biography and cultural background>",
+              "cultural_context": "<Significance of the candidate in Afro-Canadian heritage in New Brunswick>"
+          
+          "multimedia_refs": 
+              "images": URLs or file paths for images,
+              "audio": URLs or file paths for audio clips sources,
+              "video": URLs or file paths for video sources
+          ,
+          "sources": 
+              
+          
+    provide a well written markdown having the structure and section and contain above well written and merged as 
+    as document that could be easily read, everything being fluent and  ready for use.    
+    without " ```markdown" and " ```".
+  agent: cultural_heritage_researcher
+  output_file: /task_outputs/cultural_heritage_researcher/research_output__1.md
+  create_directory: true

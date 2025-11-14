@@ -1,0 +1,9 @@
+import http.client
+
+conn = http.client.HTTPSConnection("google.serper.dev")
+payload = ''
+headers = {}
+conn.request("GET", "/images?q=Willie+O'Ree's&apiKey=8abdab227136c3f11386a4416eb684ac1b9d7d8a", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data.decode("utf-8"))
