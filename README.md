@@ -1,6 +1,59 @@
-# CulturalHeritage Crew
+# 🏺 Cultural Heritage Storyteller  
+### An AI-Powered Multi-Agent System for Generating Authentic Cultural Narratives
 
-Welcome to the CulturalHeritage Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+The **Cultural Heritage Storyteller** is an intelligent, multi-agent storytelling engine designed to preserve, explore, and creatively retell cultural knowledge in the form of structured narratives, legends, oral history, and educational stories.  
+It leverages custom tools, an orchestrated agent workflow (CrewAI-style), and a curated dataset to generate culturally grounded stories with accuracy, emotional depth, and contextual alignment.
+
+This project demonstrates how AI can support cultural preservation and digital storytelling using modular LLM orchestration.
+
+
+## 🌟 Features
+
+### 🧠 **Multi-Agent Story Generation Pipeline**
+The project uses an orchestrated system of agents defined in `crew.py` to collaborate on:
+
+- Story framing  
+- Cultural context retrieval  
+- Style harmonization  
+- Narrative generation  
+- Final editing & formatting  
+
+Each agent has a dedicated role and contributes to the final story.
+
+### 📚 **Cultural Knowledge Grounding**
+The system uses training data (stored in `.pkl` files) to guide the AI toward culturally relevant storytelling patterns.
+
+Includes:
+- `my_training_data.pkl`
+- `training_data.pkl`
+
+These help the agents:
+- Understand cultural values  
+- Maintain accuracy  
+- Preserve narrative coherence  
+- Avoid fictional distortions  
+
+## 📁 Project Structure
+
+```
+cultural_heritage_storyteller/
+│── data/ # Cultural sources / raw references
+│── task_outputs/ # Generated stories
+│── my_training_data.pkl # Cultural dataset for grounding
+│── training_data.pkl # Additional training data
+│── src/
+│ └── cultural_heritage/
+│ │── main.py # Entry point to run the storytelling pipeline
+│ │── crew.py # Multi-agent orchestration and configuration
+│ │── tools/
+│ │ └── custom_tool.py # Custom retrieval & enrichment tools
+│ └── config/ # Model & agent configuration files
+│── tests/ # Unit tests
+│── hello.py # Dev/test script
+│── pyproject.toml # Project metadata + dependencies
+│── uv.lock # Dependency lockfile
+│── README.md # (This file)
+```
 
 ## Installation
 
@@ -43,12 +96,5 @@ This example, unmodified, will run the create a `report.md` file with the output
 
 The cultural_heritage Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
 
-## Support
-
-For support, questions, or feedback regarding the CulturalHeritage Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
